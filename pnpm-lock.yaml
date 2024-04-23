@@ -55,19 +55,19 @@ dependencies:
     version: 3.1.2
   knex:
     specifier: ~2.5.1
-    version: 2.5.1(mysql2@3.6.5)
+    version: 2.5.1(mysql2@3.9.7)
   limiter-es6-compat:
     specifier: ~2.1.2
     version: 2.1.2
   mysql2:
-    specifier: ~3.6.5
-    version: 3.6.5
+    specifier: ~3.9.7
+    version: 3.9.7
   promisify-child-process:
     specifier: ~4.1.2
     version: 4.1.2
   redbean-node:
     specifier: ~0.3.3
-    version: 0.3.3(mysql2@3.6.5)
+    version: 0.3.3(mysql2@3.9.7)
   semver:
     specifier: ^7.5.4
     version: 7.5.4
@@ -903,9 +903,6 @@ packages:
   /@louislam/sqlite3@15.1.6:
     resolution: {integrity: sha512-cVf7hcMrfywYnycatLvorngTFpL3BSWvEy7/NrEfcTyQX8xxj9fdeD553oCTv5fIAk85fluo6mzPq89V3YzrVA==}
     requiresBuild: true
-    peerDependenciesMeta:
-      node-gyp:
-        optional: true
     dependencies:
       '@mapbox/node-pre-gyp': 1.0.11
       node-addon-api: 4.3.0
@@ -3584,7 +3581,7 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /knex@2.4.2(mysql2@3.6.5):
+  /knex@2.4.2(mysql2@3.9.7):
     resolution: {integrity: sha512-tMI1M7a+xwHhPxjbl/H9K1kHX+VncEYcvCx5K00M16bWvpYPKAZd6QrCu68PtHAdIZNQPWZn0GVhqVBEthGWCg==}
     engines: {node: '>=12'}
     hasBin: true
@@ -3621,7 +3618,7 @@ packages:
       getopts: 2.3.0
       interpret: 2.2.0
       lodash: 4.17.21
-      mysql2: 3.6.5
+      mysql2: 3.9.7
       pg-connection-string: 2.5.0
       rechoir: 0.8.0
       resolve-from: 5.0.0
@@ -3631,7 +3628,7 @@ packages:
       - supports-color
     dev: false
 
-  /knex@2.5.1(mysql2@3.6.5):
+  /knex@2.5.1(mysql2@3.9.7):
     resolution: {integrity: sha512-z78DgGKUr4SE/6cm7ku+jHvFT0X97aERh/f0MUKAKgFnwCYBEW4TFBqtHWFYiJFid7fMrtpZ/gxJthvz5mEByA==}
     engines: {node: '>=12'}
     hasBin: true
@@ -3668,7 +3665,7 @@ packages:
       getopts: 2.3.0
       interpret: 2.2.0
       lodash: 4.17.21
-      mysql2: 3.6.5
+      mysql2: 3.9.7
       pg-connection-string: 2.6.1
       rechoir: 0.8.0
       resolve-from: 5.0.0
@@ -3983,8 +3980,8 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: false
 
-  /mysql2@3.6.5:
-    resolution: {integrity: sha512-pS/KqIb0xlXmtmqEuTvBXTmLoQ5LmAz5NW/r8UyQ1ldvnprNEj3P9GbmuQQ2J0A4LO+ynotGi6TbscPa8OUb+w==}
+  /mysql2@3.9.7:
+    resolution: {integrity: sha512-KnJT8vYRcNAZv73uf9zpXqNbvBG7DJrs+1nACsjZP1HMJ1TgXEy8wnNilXAn/5i57JizXKtrUtwDB7HxT9DDpw==}
     engines: {node: '>= 8.0'}
     dependencies:
       denque: 2.1.0
@@ -4435,14 +4432,14 @@ packages:
       resolve: 1.22.8
     dev: false
 
-  /redbean-node@0.3.3(mysql2@3.6.5):
+  /redbean-node@0.3.3(mysql2@3.9.7):
     resolution: {integrity: sha512-0J59/QlShdWs1h0lsFHRfb8NwjvgIYTQKwYrvq6FykRmeX1cG2u8AgHEIRVBrm56mtKLRASVy/8ykk6fSntLdw==}
     dependencies:
       '@types/node': 20.3.3
       await-lock: 2.2.2
       dayjs: 1.11.10
       glob: 10.3.10
-      knex: 2.4.2(mysql2@3.6.5)
+      knex: 2.4.2(mysql2@3.9.7)
       lodash: 4.17.21
     transitivePeerDependencies:
       - better-sqlite3
@@ -5565,6 +5562,7 @@ packages:
 
   /xterm@5.3.0:
     resolution: {integrity: sha512-8QqjlekLUFTrU6x7xck1MsPzPA571K5zNqWm0M0oroYEWVOptZ0+ubQSkQ3uxIEhcIHRujJy6emDWX4A7qyFzg==}
+    deprecated: This package is now deprecated. Move to @xterm/xterm instead.
     dev: true
 
   /y18n@4.0.3:
